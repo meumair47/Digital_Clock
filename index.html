@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock with Date</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="clock"></div>
+
+    <div class="set-time">
+        <input type="number" id="set-hours" placeholder="Hours" min="0" max="23">
+        <input type="number" id="set-minutes" placeholder="Minutes" min="0" max="59">
+        <input type="number" id="set-seconds" placeholder="Seconds" min="0" max="59">
+        <button onclick="setTime()">Set Time</button>
+    </div>
+
+    <div class="set-date">
+        <input type="number" id="set-day" placeholder="Day" min="1" max="31">
+        <input type="number" id="set-month" placeholder="Month" min="1" max="12">
+        <input type="number" id="set-year" placeholder="Year" min="0">
+        <button onclick="setDate()">Set Date</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
